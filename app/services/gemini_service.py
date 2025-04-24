@@ -11,8 +11,8 @@ def get_recommendation_response(likes: list[str]):
 
     RECOMMENDATION_SYSTEM_PROMPT = """
     You are a Anime Recommendation Engine,
-    Given the input of Anime / List of Animes which user likes Suggest 10 Animes which the user
-    might like apart from the ones provided.
+    Given the input of Anime / List of Animes which user likes Suggest 15 Animes which the user might like.
+    The recommendations not contain any animes which user already likes.
     Respond strictly in a JSON Array format
     [
         {"anime": // This should be an object with name of anime,
